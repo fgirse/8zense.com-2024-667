@@ -1,0 +1,6 @@
+          cookiesToSet.forEach(({ name, value, options }: { name: string; value: string; options: CookieOptions }) => {
+            request.cookies.set(name, value, options as unknown as RequestCookie)
+            supabaseResponse = NextResponse.next({
+              request,
+            })
+          })

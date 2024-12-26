@@ -1,0 +1,9 @@
+
+
+
+{
+    "bail": 2,
+    "verbose": true,
+    "testRetryTimes": 12200
+  
+  }
