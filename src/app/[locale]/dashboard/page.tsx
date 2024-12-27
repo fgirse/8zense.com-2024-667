@@ -1,4 +1,4 @@
-import { createServerComponentClient } from '@supabase/auth-helpers-react/auth-helpers-nextjs';
+import { createServerComponentClient } from '@supabase/auth-helpers-nextjs';
 import { cookies } from 'next/headers';
 import Link from 'next/link';
 import { redirect } from 'next/navigation';
