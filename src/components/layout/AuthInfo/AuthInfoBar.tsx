@@ -22,7 +22,7 @@ export default function Authinfobar() {
   };
 
   return (
-    <div className="w-full  bg-neutral-400 shadow text-neutral-800 py-4 mx-auto max-w-9xl  px-4 sm:px-6 lg:px-8">
+    <div className="w-full bg-gradient-to-b from-stone-500 to-stone-200 shadow text-neutral-800 py-4 mx-auto max-w-9xl  px-4 sm:px-6 lg:px-8">
       <div className="lg:backdrop-brightness-200 flex items-center justify-start gap-10">
         <Link
           href="/"

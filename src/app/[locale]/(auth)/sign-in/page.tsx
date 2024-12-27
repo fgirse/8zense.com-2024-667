@@ -30,7 +30,7 @@ const SignIn = () => {
 			<div className="flex items-center justify-center">
 				<div className="flex flex-col items-center gap-4">
 					<h1 className="text-3xl font-bold">{t('welcome')}</h1>
-					<p className="text-gray-500">{t('signin')}</p>
+					<p className="text-center text-gray-500">{t('signin')}</p>
 					<div className="w-[350px]">
 						<Auth
 							supabaseClient={supabaseClient}

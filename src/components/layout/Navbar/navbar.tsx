@@ -57,7 +57,7 @@ export default function Navbar({ }) {
 
   return (
            
-    <nav className="bg-neutral-500 shadow text-neutral-50 lg:text-2xl">
+    <nav className="bg-gradient-to-b from-stone-200 to-stone-500 shadow text-neutral-50 lg:text-2xl">
       <div className="max-w-9xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between h-16">
           <div className="flex">
@@ -74,7 +74,7 @@ export default function Navbar({ }) {
                   <Link
                     key={item.title}
                     href={item.href}
-                    className="inline-flex items-center px-1 pt-1 font-medium text-gray-50 hover:text-red-800  hover:transform translate-x-3   lg:text-2xl uppercase"
+                    className="uppercase 5uz8ui0inline-flex items-center px-1 pt-1 font-medium text-gray-50 hover:text-red-800  hover:transform translate-x-3   lg:text-2xl uppercase"
                   >
                     {item.title}
                   </Link>
