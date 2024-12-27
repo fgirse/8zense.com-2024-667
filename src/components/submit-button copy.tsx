@@ -1,6 +1,6 @@
 import { Button } from "@/src/components/ui/button";
 import { type ComponentProps } from "react";
-import { useFormStatus } from "react-dom"; // Import statement corrected
+import { useState } from "react";
 
 type Props = ComponentProps<typeof Button> & {
   pendingText?: string;
@@ -11,7 +11,7 @@ export function SubmitButton({
   pendingText = "Submitting...",
   ...props
 }: Props) {
-  const { pending } = useFormStatus(); // Corrected the import statement
+  const [pending, setPending] = useState(false);
 
   return (
     <Button type="submit" aria-disabled={pending} {...props}>
