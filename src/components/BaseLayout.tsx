@@ -14,10 +14,8 @@ import SupabaseProvider from "@/src/providers/SupabaseProvider";
 import UserProvider from "@/src/providers/UserProvider";
 import Navigation from "@/src/components/layout/Navbar/navbar"
 import AuthInfoBar from "@/src/components/layout/AuthInfo/AuthInfoBar";
-
-//import Navigation from '@/src/components/Navigation';
-
-import {Roboto_Condensed, Architects_Daughter, Bowlby_One_SC } from "next/font/google";
+import {Raleway, Architects_Daughter, Bowlby_One_SC } from "next/font/google"
+;
 import ScrollToTopButton from '@/src/components/ScrollToTopButton';
 
 
@@ -62,7 +60,7 @@ const architectsDaughter = Architects_Daughter({
 
   
 
-  const robotoCondensed = Roboto_Condensed({
+  const raleway = Raleway({
 
   
 
@@ -74,7 +72,7 @@ const architectsDaughter = Architects_Daughter({
 
   
 
-    variable: '--font-robotoCondensed',
+    variable: '--font-raleway',
 
   
 
@@ -87,7 +85,8 @@ type Props = {
 
 export const metadata: Metadata = {
 	title: "8zense.com",
-	description: "Landing page for Startup  8zense.com",            
+	description: "Landing page for Startup  8zense.com",  
+  icons: { icon: "/images/LogoEZ990.svg" },          
 };
 
 
@@ -97,11 +96,11 @@ export default function BaseLayout({children, locale}: Props) {
   const messages = useMessages();
 
   return (
-    <html className={`${robotoCondensed.variable} ${bowlbySC.variable} ${architectsDaughter.variable} h-full` } lang={locale} {...mantineHtmlProps}>  
+    <html className={`${raleway.variable} ${bowlbySC.variable} ${architectsDaughter.variable} h-full` } lang={locale} {...mantineHtmlProps}>  
      <head>
         <ColorSchemeScript />
       </head>
-      <body className={clsx(robotoCondensed.className, 'flex h-full flex-col')}>
+      <body className={clsx(raleway.className, 'flex h-full flex-col')}>
         
         <NextIntlClientProvider messages={messages}>
 

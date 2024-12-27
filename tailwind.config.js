@@ -21,7 +21,7 @@ module.exports = {
 
 				bowlbySC: 'var(--font-bowlbySC)',
 		
-				robotoC: 'var(--font-robotoCondensed)',
+				raleway: 'var(--font-raleway)',
 		
 				archidaught: 'var(--font-architectsDaughter)',  
 		
